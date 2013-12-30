@@ -3,13 +3,13 @@
 [STOP]   <TOTAL>
 
 
-[STANJE]   <PRAVAC>
-  Stanje                PRAVAC
-[STOP]   <PRAVAC>
-
 [STANJE]   <PROMENA>
   Stanje                PROMENA
 [STOP]   <PROMENA>
+
+[STANJE]   <PRAVAC>
+  Stanje                PRAVAC
+[STOP]   <PRAVAC>
 
 [STANJE]   <SKRETANJE>
   Stanje                SKRETANJE
