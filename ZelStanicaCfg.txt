@@ -1,0 +1,411 @@
+[SISTEM]
+  SysName               SN sistem - DEMO2
+[STOP]   <TOTAL>
+
+
+[STANJE]   <PROMENA>
+  Stanje                PROMENA
+[STOP]   <PROMENA>
+
+[STANJE]   <PRAVAC>
+  Stanje                PRAVAC
+[STOP]   <PRAVAC>
+
+[STANJE]   <SKRETANJE>
+  Stanje                SKRETANJE
+[STOP]   <SKRETANJE>
+
+[STANJE]   <KVAR>
+  Stanje                KVAR
+[STOP]   <KVAR>
+
+[STANJE]   <SLODOBAN>
+  Stanje                SLOBODAN
+[STOP]   <SLODOBAN>
+
+[STANJE]   <ZAUZET>
+  Stanje                ZAUZET
+[STOP]   <ZAUZET>
+
+[STANJE]   <ISPRAVAN>
+  Stanje                ISPRAVAN
+[STOP]   <ISPRAVAN>
+
+[KOMANDA]   <NEMA_IZLAZA>
+  Komanda               NEMA_IZLAZA
+[STOP]   <NEMA_IZLAZA>
+
+[KOMANDA]   <MIRUJ>
+  Komanda               MIRUJ
+[STOP]   <MIRUJ>
+
+[KOMANDA]   <UPRAVAC>
+  Komanda               UPRAVAC
+[STOP]   <UPRAVAC>
+
+[KOMANDA]   <USKRETANJE>
+  Komanda               USKRETANJE
+[STOP]   <USKRETANJE>
+
+[KOMANDA]   <ZABRANJENO>
+  Komanda               ZABRANJENO
+[STOP]   <ZABRANJENO>
+
+[KOMANDA]   <ISKLJUCI>
+  Komanda               ISKLJUCI
+[STOP]   <ISKLJUCI>
+
+[RTU]   <Kontroler RTU-1>
+  Virtualna             OFF
+  FizAdresa             1
+  Kanal                 DAC-1
+  DataType              USERTYPE1
+  Period                5
+  NoAin                 32
+  NoAout                4
+  NoDin                 80
+  NoDout                40
+  NoCnt                 8
+  NoAnaIn               26
+  NoAnaOut              0
+  NoDigDev              56
+  NoCounter             4
+  Ime                   RTU-1
+  Opis                  Kontroler RTU-1
+  HostName              localhost
+[STOP]   <Kontroler RTU-1>
+
+[TIPDIG]   <Skretnica>
+  TipDigDev             Skretnica
+  BrUlaza               2
+  BrIzlaza              2
+  ListaStanja
+      Stanje                <00>    PROMENA
+      Stanje                <01>    PRAVAC
+      Stanje                <10>    SKRETANJE
+      Stanje                <11>    KVAR
+  ListaKomandi
+      Komanda               <00>    MIRUJ
+      Komanda               <01>    UPRAVAC
+      Komanda               <10>    USKRETANJE
+      Komanda               <11>    ZABRANJENO
+[STOP]   <Skretnica>
+
+[TIPDIG]   <IzolovaniOdsek>
+  TipDigDev             Izolovani odsek
+  BrUlaza               1
+  BrIzlaza              0
+  ListaStanja
+      Stanje                <00>    SLOBODAN
+      Stanje                <01>    ZAUZET
+  ListaKomandi
+      Komanda               <00>    NEMA_IZLAZA
+[STOP]   <Izolovani odsek>
+
+[TIPDIG]   <SvetlosniSignal>
+  TipDigDev             Svetlosni signal
+  BrUlaza               1
+  BrIzlaza              1
+  ListaStanja
+      Stanje                <00>    ISPRAVAN
+      Stanje                <01>    KVAR
+[STOP]   <SvetlosniSignal>
+
+[DIGITAL]   <RTU-1 / Skretnica 1>
+  TipDigDev             Skretnica
+  NoDin                 2
+  NoDout                2
+  StanjaList
+      Stanje                <00>    PROMENA
+      Stanje                <01>    PRAVAC
+      Stanje                <10>    SKRETANJE
+      Stanje                <11>    KVAR
+  UlaziList
+      Ulaz                  0  Adr= 0,  DI
+      Ulaz                  1  Adr= 1,  DI
+  KomandeList
+      Komanda               <00>    MIRUJ
+      Komanda               <01>    UPRAVAC
+      Komanda               <10>    USKRETANJE
+      Komanda               <11>    ZABRANJENO
+  IzlaziList
+      Izlaz                 0  Adr= 0,  DO
+      Izlaz                 1  Adr= 1,  DO
+  CmdTimOut             30
+  UTS                   RTU-1
+  Ime                   SK-1
+  Opis                  Skretnica 1
+[STOP]   <RTU-1 / Skretnica 1>
+
+[DIGITAL]   <RTU-1 / Skretnica 2a>
+  TipDigDev             Skretnica
+  NoDin                 2
+  NoDout                2
+  StanjaList
+      Stanje                <00>    PROMENA
+      Stanje                <01>    PRAVAC
+      Stanje                <10>    SKRETANJE
+      Stanje                <11>    KVAR
+  UlaziList
+      Ulaz                  0  Adr= 2,  DI
+      Ulaz                  1  Adr= 3,  DI
+  KomandeList
+      Komanda               <00>    MIRUJ
+      Komanda               <01>    UPRAVAC
+      Komanda               <10>    USKRETANJE
+      Komanda               <11>    ZABRANJENO
+  IzlaziList
+      Izlaz                 0  Adr= 2,  DO
+      Izlaz                 1  Adr= 3,  DO
+  CmdTimOut             30
+  UTS                   RTU-1
+  Ime                   SK-2a
+  Opis                  Skretnica 2a
+[STOP]   <RTU-1 / Skretnica 2a>
+
+[DIGITAL]   <RTU-1 / Skretnica 2b>
+  TipDigDev             Skretnica
+  NoDin                 2
+  NoDout                2
+  StanjaList
+      Stanje                <00>    PROMENA
+      Stanje                <01>    PRAVAC
+      Stanje                <10>    SKRETANJE
+      Stanje                <11>    KVAR
+  UlaziList
+      Ulaz                  0  Adr= 4,  DI
+      Ulaz                  1  Adr= 5,  DI
+  KomandeList
+      Komanda               <00>    MIRUJ
+      Komanda               <01>    UPRAVAC
+      Komanda               <10>    USKRETANJE
+      Komanda               <11>    ZABRANJENO
+  IzlaziList
+      Izlaz                 0  Adr= 4,  DO
+      Izlaz                 1  Adr= 5,  DO
+  CmdTimOut             30
+  UTS                   RTU-1
+  Ime                   SK-2b
+  Opis                  Skretnica 2b
+[STOP]   <RTU-1 / Skretnica 2b>
+
+[DIGITAL]   <RTU-1 / Skretnica 3>
+  TipDigDev             Skretnica
+  NoDin                 2
+  NoDout                2
+  StanjaList
+      Stanje                <00>    PROMENA
+      Stanje                <01>    PRAVAC
+      Stanje                <10>    SKRETANJE
+      Stanje                <11>    KVAR
+  UlaziList
+      Ulaz                  0  Adr= 6,  DI
+      Ulaz                  1  Adr= 7,  DI
+  KomandeList
+      Komanda               <00>    MIRUJ
+      Komanda               <01>    UPRAVAC
+      Komanda               <10>    USKRETANJE
+      Komanda               <11>    ZABRANJENO
+  IzlaziList
+      Izlaz                 0  Adr= 6,  DO
+      Izlaz                 1  Adr= 7,  DO
+  CmdTimOut             30
+  UTS                   RTU-1
+  Ime                   SK-3
+  Opis                  Skretnica 3
+[STOP]   <RTU-1 / Skretnica 3>
+
+[DIGITAL]   <RTU-1 / Skretnica 4>
+  TipDigDev             Skretnica
+  NoDin                 2
+  NoDout                2
+  StanjaList
+      Stanje                <00>    PROMENA
+      Stanje                <01>    PRAVAC
+      Stanje                <10>    SKRETANJE
+      Stanje                <11>    KVAR
+  UlaziList
+      Ulaz                  0  Adr= 8,  DI
+      Ulaz                  1  Adr= 9,  DI
+  KomandeList
+      Komanda               <00>    MIRUJ
+      Komanda               <01>    UPRAVAC
+      Komanda               <10>    USKRETANJE
+      Komanda               <11>    ZABRANJENO
+  IzlaziList
+      Izlaz                 0  Adr= 8,  DO
+      Izlaz                 1  Adr= 9,  DO
+  CmdTimOut             30
+  UTS                   RTU-1
+  Ime                   SK-4
+  Opis                  Skretnica 4
+[STOP]   <RTU-1 / Skretnica 4>
+
+[DIGITAL]   <RTU-1 / Skretnica 5>
+  TipDigDev             Skretnica
+  NoDin                 2
+  NoDout                2
+  StanjaList
+      Stanje                <00>    PROMENA
+      Stanje                <01>    PRAVAC
+      Stanje                <10>    SKRETANJE
+      Stanje                <11>    KVAR
+  UlaziList
+      Ulaz                  0  Adr= 10,  DI
+      Ulaz                  1  Adr= 11,  DI
+  KomandeList
+      Komanda               <00>    MIRUJ
+      Komanda               <01>    UPRAVAC
+      Komanda               <10>    USKRETANJE
+      Komanda               <11>    ZABRANJENO
+  IzlaziList
+      Izlaz                 0  Adr= 10,  DO
+      Izlaz                 1  Adr= 11,  DO
+  CmdTimOut             30
+  UTS                   RTU-1
+  Ime                   SK-5
+  Opis                  Skretnica 5
+[STOP]   <RTU-1 / Skretnica 5>
+
+[DIGITAL]   <RTU-1 / Skretnica 6>
+  TipDigDev             Skretnica
+  NoDin                 2
+  NoDout                2
+  StanjaList
+      Stanje                <00>    PROMENA
+      Stanje                <01>    PRAVAC
+      Stanje                <10>    SKRETANJE
+      Stanje                <11>    KVAR
+  UlaziList
+      Ulaz                  0  Adr= 12,  DI
+      Ulaz                  1  Adr= 13,  DI
+  KomandeList
+      Komanda               <00>    MIRUJ
+      Komanda               <01>    UPRAVAC
+      Komanda               <10>    USKRETANJE
+      Komanda               <11>    ZABRANJENO
+  IzlaziList
+      Izlaz                 0  Adr= 12,  DO
+      Izlaz                 1  Adr= 13,  DO
+  CmdTimOut             30
+  UTS                   RTU-1
+  Ime                   SK-6
+  Opis                  Skretnica 6
+[STOP]   <RTU-1 / Skretnica 6>
+
+[DIGITAL]   <RTU-1 / Skretnica 7>
+  TipDigDev             Skretnica
+  NoDin                 2
+  NoDout                2
+  StanjaList
+      Stanje                <00>    PROMENA
+      Stanje                <01>    PRAVAC
+      Stanje                <10>    SKRETANJE
+      Stanje                <11>    KVAR
+  UlaziList
+      Ulaz                  0  Adr= 14,  DI
+      Ulaz                  1  Adr= 15,  DI
+  KomandeList
+      Komanda               <00>    MIRUJ
+      Komanda               <01>    UPRAVAC
+      Komanda               <10>    USKRETANJE
+      Komanda               <11>    ZABRANJENO
+  IzlaziList
+      Izlaz                 0  Adr= 14,  DO
+      Izlaz                 1  Adr= 15,  DO
+  CmdTimOut             30
+  UTS                   RTU-1
+  Ime                   SK-7
+  Opis                  Skretnica 7
+[STOP]   <RTU-1 / Skretnica 7>
+
+[DIGITAL]   <RTU-1 / Skretnica 8>
+  TipDigDev             Skretnica
+  NoDin                 2
+  NoDout                2
+  StanjaList
+      Stanje                <00>    PROMENA
+      Stanje                <01>    PRAVAC
+      Stanje                <10>    SKRETANJE
+      Stanje                <11>    KVAR
+  UlaziList
+      Ulaz                  0  Adr= 16,  DI
+      Ulaz                  1  Adr= 17,  DI
+  KomandeList
+      Komanda               <00>    MIRUJ
+      Komanda               <01>    UPRAVAC
+      Komanda               <10>    USKRETANJE
+      Komanda               <11>    ZABRANJENO
+  IzlaziList
+      Izlaz                 0  Adr= 16,  DO
+      Izlaz                 1  Adr= 17,  DO
+  CmdTimOut             30
+  UTS                   RTU-1
+  Ime                   SK-8
+  Opis                  Skretnica 8
+[STOP]   <RTU-1 / Skretnica 8>
+
+[DIGITAL]   <RTU-1 / Skretnica IS1>
+  TipDigDev             Skretnica
+  NoDin                 2
+  NoDout                2
+  StanjaList
+      Stanje                <00>    PROMENA
+      Stanje                <01>    PRAVAC
+      Stanje                <10>    SKRETANJE
+      Stanje                <11>    KVAR
+  UlaziList
+      Ulaz                  0  Adr= 18,  DI
+      Ulaz                  1  Adr= 19,  DI
+  KomandeList
+      Komanda               <00>    MIRUJ
+      Komanda               <01>    UPRAVAC
+      Komanda               <10>    USKRETANJE
+      Komanda               <11>    ZABRANJENO
+  IzlaziList
+      Izlaz                 0  Adr= 18,  DO
+      Izlaz                 1  Adr= 19,  DO
+  CmdTimOut             30
+  UTS                   RTU-1
+  Ime                   SK-IS1
+  Opis                  Skretnica IS1
+[STOP]   <RTU-1 / Skretnica IS1>
+
+[DIGITAL]   <RTU-1 / Skretnica IS2>
+  TipDigDev             Skretnica
+  NoDin                 2
+  NoDout                2
+  StanjaList
+      Stanje                <00>    PROMENA
+      Stanje                <01>    PRAVAC
+      Stanje                <10>    SKRETANJE
+      Stanje                <11>    KVAR
+  UlaziList
+      Ulaz                  0  Adr= 20,  DI
+      Ulaz                  1  Adr= 21,  DI
+  KomandeList
+      Komanda               <00>    MIRUJ
+      Komanda               <01>    UPRAVAC
+      Komanda               <10>    USKRETANJE
+      Komanda               <11>    ZABRANJENO
+  IzlaziList
+      Izlaz                 0  Adr= 20,  DO
+      Izlaz                 1  Adr= 21,  DO
+  CmdTimOut             30
+  UTS                   RTU-1
+  Ime                   SK-IS2
+  Opis                  Skretnica IS2
+[STOP]   <RTU-1 / Skretnica IS2>
+
+[KANAL]   <Akvizicioni kanal 1>
+  Port                  TCP1
+  TimeOut               2
+  TCPort                4000
+  Tip                   Client
+  AcqTime               10
+  Ime                   DAC-1
+  Opis                  Akvizicioni kanal 1
+[STOP]   <Akvizicioni kanal 1>
+
+
+[END]   <SN sistem - DEMO 2>
