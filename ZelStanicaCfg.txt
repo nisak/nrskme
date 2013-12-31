@@ -2,10 +2,6 @@
   SysName               SN sistem - DEMO2
 [STOP]   <TOTAL>
 
-[STANJE]   <GITPROBA>
-  Stanje                GITPROBA
-[STOP]   <GITPROBA>
-
 [STANJE]   <PROMENA>
   Stanje                PROMENA
 [STOP]   <PROMENA>
