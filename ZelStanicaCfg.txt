@@ -74,6 +74,16 @@
   HostName              localhost
 [STOP]   <Kontroler RTU-1>
 
+[KANAL]   <Akvizicioni kanal 1>
+  Port                  TCP1
+  TimeOut               2
+  TCPort                4000
+  Tip                   Client
+  AcqTime               10
+  Ime                   DAC-1
+  Opis                  Akvizicioni kanal 1
+[STOP]   <Akvizicioni kanal 1>
+
 [TIPDIG]   <Skretnica>
   TipDigDev             Skretnica
   BrUlaza               2
@@ -396,15 +406,509 @@
   Opis                  Skretnica IS2
 [STOP]   <RTU-1 / Skretnica IS2>
 
-[KANAL]   <Akvizicioni kanal 1>
-  Port                  TCP1
-  TimeOut               2
-  TCPort                4000
-  Tip                   Client
-  AcqTime               10
-  Ime                   DAC-1
-  Opis                  Akvizicioni kanal 1
-[STOP]   <Akvizicioni kanal 1>
+[DIGITAL]   <RTU-1 / Izolovani odsek IC1>
+  Validnost             ON
+  Ocitan                ON
+  Timestamp             660745654
+  Aktivnost             ON
+  Statistika            OFF
+  Dogadjaji             ON
+  MerenaVel             ON
+  Prioritet             3
+  TipDigDev             Izolovani odsek
+  NoDin                 1
+  NoDout                0
+  CurrStanje            SLOBODAN
+  StanjaList
+      Stanje                <00>    SLOBODAN
+      Stanje                <01>    ZAUZET
+  UlaziList
+      Ulaz                  0  Adr= 22,  DI
+  KomandeList
+      Komanda               <00>    NEMA_IZLAZA
+  IzlaziList
+  IniOut                UKLJUCI
+  CmdTimOut             0
+  UTS                   RTU-1
+  Ime                   IO-IC1
+  Opis                  Izolovani odsek IC1
+[STOP]   <RTU-1 / Izolovani odsek IC1>
+
+[DIGITAL]   <RTU-1 / Izolovani odsek IC2>
+  Validnost             ON
+  Ocitan                ON
+  Timestamp             660745654
+  Aktivnost             ON
+  Statistika            OFF
+  Dogadjaji             ON
+  MerenaVel             ON
+  Prioritet             3
+  TipDigDev             Izolovani odsek
+  NoDin                 1
+  NoDout                0
+  CurrStanje            SLOBODAN
+  StanjaList
+      Stanje                <00>    SLOBODAN
+      Stanje                <01>    ZAUZET
+  UlaziList
+      Ulaz                  0  Adr= 23,  DI
+  KomandeList
+      Komanda               <00>    NEMA_IZLAZA
+  IzlaziList
+  IniOut                UKLJUCI
+  CmdTimOut             0
+  UTS                   RTU-1
+  Ime                   IO-IC2
+  Opis                  Izolovani odsek IC2
+[STOP]   <RTU-1 / Izolovani odsek IC2>
+
+[DIGITAL]   <RTU-1 / Izolovani odsek IU1>
+  Validnost             ON
+  Ocitan                ON
+  Timestamp             660745654
+  Aktivnost             ON
+  Statistika            OFF
+  Dogadjaji             ON
+  MerenaVel             ON
+  Prioritet             3
+  TipDigDev             Izolovani odsek
+  NoDin                 1
+  NoDout                0
+  CurrStanje            SLOBODAN
+  StanjaList
+      Stanje                <00>    SLOBODAN
+      Stanje                <01>    ZAUZET
+  UlaziList
+      Ulaz                  0  Adr= 24,  DI
+  KomandeList
+      Komanda               <00>    NEMA_IZLAZA
+  IzlaziList
+  IniOut                UKLJUCI
+  CmdTimOut             0
+  UTS                   RTU-1
+  Ime                   IO-IU1
+  Opis                  Izolovani odsek IU1
+[STOP]   <RTU-1 / Izolovani odsek IU1>
+
+[DIGITAL]   <RTU-1 / Izolovani odsek IU2>
+  Validnost             ON
+  Ocitan                ON
+  Timestamp             660745654
+  Aktivnost             ON
+  Statistika            OFF
+  Dogadjaji             ON
+  MerenaVel             ON
+  Prioritet             3
+  TipDigDev             Izolovani odsek
+  NoDin                 1
+  NoDout                0
+  CurrStanje            SLOBODAN
+  StanjaList
+      Stanje                <00>    SLOBODAN
+      Stanje                <01>    ZAUZET
+  UlaziList
+      Ulaz                  0  Adr= 25,  DI
+  KomandeList
+      Komanda               <00>    NEMA_IZLAZA
+  IzlaziList
+  IniOut                UKLJUCI
+  CmdTimOut             0
+  UTS                   RTU-1
+  Ime                   IO-IU2
+  Opis                  Izolovani odsek IU2
+[STOP]   <RTU-1 / Izolovani odsek IU2>
+
+[DIGITAL]   <RTU-1 / Izolovani odsek ID1>
+  Validnost             ON
+  Ocitan                ON
+  Timestamp             660745654
+  Aktivnost             ON
+  Statistika            OFF
+  Dogadjaji             ON
+  MerenaVel             ON
+  Prioritet             3
+  TipDigDev             Izolovani odsek
+  NoDin                 1
+  NoDout                0
+  CurrStanje            SLOBODAN
+  StanjaList
+      Stanje                <00>    SLOBODAN
+      Stanje                <01>    ZAUZET
+  UlaziList
+      Ulaz                  0  Adr= 26,  DI
+  KomandeList
+      Komanda               <00>    NEMA_IZLAZA
+  IzlaziList
+  IniOut                UKLJUCI
+  CmdTimOut             0
+  UTS                   RTU-1
+  Ime                   IO-ID1
+  Opis                  Izolovani odsek ID1
+[STOP]   <RTU-1 / Izolovani odsek ID1>
+
+[DIGITAL]   <RTU-1 / Izolovani odsek ID2>
+  Validnost             ON
+  Ocitan                ON
+  Timestamp             660745654
+  Aktivnost             ON
+  Statistika            OFF
+  Dogadjaji             ON
+  MerenaVel             ON
+  Prioritet             3
+  TipDigDev             Izolovani odsek
+  NoDin                 1
+  NoDout                0
+  CurrStanje            SLOBODAN
+  StanjaList
+      Stanje                <00>    SLOBODAN
+      Stanje                <01>    ZAUZET
+  UlaziList
+      Ulaz                  0  Adr= 27,  DI
+  KomandeList
+      Komanda               <00>    NEMA_IZLAZA
+  IzlaziList
+  IniOut                UKLJUCI
+  CmdTimOut             0
+  UTS                   RTU-1
+  Ime                   IO-ID2
+  Opis                  Izolovani odsek ID2
+[STOP]   <RTU-1 / Izolovani odsek ID2>
+
+[DIGITAL]   <RTU-1 / Izolovani odsek IS1>
+  Validnost             ON
+  Ocitan                ON
+  Timestamp             660745654
+  Aktivnost             ON
+  Statistika            OFF
+  Dogadjaji             ON
+  MerenaVel             ON
+  Prioritet             3
+  TipDigDev             Izolovani odsek
+  NoDin                 1
+  NoDout                0
+  CurrStanje            SLOBODAN
+  StanjaList
+      Stanje                <00>    SLOBODAN
+      Stanje                <01>    ZAUZET
+  UlaziList
+      Ulaz                  0  Adr= 28,  DI
+  KomandeList
+      Komanda               <00>    NEMA_IZLAZA
+  IzlaziList
+  IniOut                UKLJUCI
+  CmdTimOut             0
+  UTS                   RTU-1
+  Ime                   IO-IS1
+  Opis                  Izolovani odsek IS1
+[STOP]   <RTU-1 / Izolovani odsek IS1>
+
+[DIGITAL]   <RTU-1 / Izolovani odsek IS2>
+  Validnost             ON
+  Ocitan                ON
+  Timestamp             660745654
+  Aktivnost             ON
+  Statistika            OFF
+  Dogadjaji             ON
+  MerenaVel             ON
+  Prioritet             3
+  TipDigDev             Izolovani odsek
+  NoDin                 1
+  NoDout                0
+  CurrStanje            SLOBODAN
+  StanjaList
+      Stanje                <00>    SLOBODAN
+      Stanje                <01>    ZAUZET
+  UlaziList
+      Ulaz                  0  Adr= 29,  DI
+  KomandeList
+      Komanda               <00>    NEMA_IZLAZA
+  IzlaziList
+  IniOut                UKLJUCI
+  CmdTimOut             0
+  UTS                   RTU-1
+  Ime                   IO-IS2
+  Opis                  Izolovani odsek IS2
+[STOP]   <RTU-1 / Izolovani odsek IS2>
+
+[DIGITAL]   <RTU-1 / Izolovani odsek IS3>
+  Validnost             ON
+  Ocitan                ON
+  Timestamp             660745654
+  Aktivnost             ON
+  Statistika            OFF
+  Dogadjaji             ON
+  MerenaVel             ON
+  Prioritet             3
+  TipDigDev             Izolovani odsek
+  NoDin                 1
+  NoDout                0
+  CurrStanje            SLOBODAN
+  StanjaList
+      Stanje                <00>    SLOBODAN
+      Stanje                <01>    ZAUZET
+  UlaziList
+      Ulaz                  0  Adr= 30,  DI
+  KomandeList
+      Komanda               <00>    NEMA_IZLAZA
+  IzlaziList
+  IniOut                UKLJUCI
+  CmdTimOut             0
+  UTS                   RTU-1
+  Ime                   IO-IS3
+  Opis                  Izolovani odsek IS3
+[STOP]   <RTU-1 / Izolovani odsek IS3>
+
+[DIGITAL]   <RTU-1 / Izolovani odsek IS4>
+  Validnost             ON
+  Ocitan                ON
+  Timestamp             660745654
+  Aktivnost             ON
+  Statistika            OFF
+  Dogadjaji             ON
+  MerenaVel             ON
+  Prioritet             3
+  TipDigDev             Izolovani odsek
+  NoDin                 1
+  NoDout                0
+  CurrStanje            SLOBODAN
+  StanjaList
+      Stanje                <00>    SLOBODAN
+      Stanje                <01>    ZAUZET
+  UlaziList
+      Ulaz                  0  Adr= 31,  DI
+  KomandeList
+      Komanda               <00>    NEMA_IZLAZA
+  IzlaziList
+  IniOut                UKLJUCI
+  CmdTimOut             0
+  UTS                   RTU-1
+  Ime                   IO-IS4
+  Opis                  Izolovani odsek IS4
+[STOP]   <RTU-1 / Izolovani odsek IS4>
+
+[DIGITAL]   <RTU-1 / Izolovani odsek IS5>
+  Validnost             ON
+  Ocitan                ON
+  Timestamp             660745654
+  Aktivnost             ON
+  Statistika            OFF
+  Dogadjaji             ON
+  MerenaVel             ON
+  Prioritet             3
+  TipDigDev             Izolovani odsek
+  NoDin                 1
+  NoDout                0
+  CurrStanje            SLOBODAN
+  StanjaList
+      Stanje                <00>    SLOBODAN
+      Stanje                <01>    ZAUZET
+  UlaziList
+      Ulaz                  0  Adr= 32,  DI
+  KomandeList
+      Komanda               <00>    NEMA_IZLAZA
+  IzlaziList
+  IniOut                UKLJUCI
+  CmdTimOut             0
+  UTS                   RTU-1
+  Ime                   IO-IS5
+  Opis                  Izolovani odsek IS5
+[STOP]   <RTU-1 / Izolovani odsek IS5>
+
+[DIGITAL]   <RTU-1 / Izolovani odsek IS6>
+  Validnost             ON
+  Ocitan                ON
+  Timestamp             660745654
+  Aktivnost             ON
+  Statistika            OFF
+  Dogadjaji             ON
+  MerenaVel             ON
+  Prioritet             3
+  TipDigDev             Izolovani odsek
+  NoDin                 1
+  NoDout                0
+  CurrStanje            SLOBODAN
+  StanjaList
+      Stanje                <00>    SLOBODAN
+      Stanje                <01>    ZAUZET
+  UlaziList
+      Ulaz                  0  Adr= 33,  DI
+  KomandeList
+      Komanda               <00>    NEMA_IZLAZA
+  IzlaziList
+  IniOut                UKLJUCI
+  CmdTimOut             0
+  UTS                   RTU-1
+  Ime                   IO-IS6
+  Opis                  Izolovani odsek IS6
+[STOP]   <RTU-1 / Izolovani odsek IS6>
+
+[DIGITAL]   <RTU-1 / Izolovani odsek IS7>
+  Validnost             ON
+  Ocitan                ON
+  Timestamp             660745654
+  Aktivnost             ON
+  Statistika            OFF
+  Dogadjaji             ON
+  MerenaVel             ON
+  Prioritet             3
+  TipDigDev             Izolovani odsek
+  NoDin                 1
+  NoDout                0
+  CurrStanje            SLOBODAN
+  StanjaList
+      Stanje                <00>    SLOBODAN
+      Stanje                <01>    ZAUZET
+  UlaziList
+      Ulaz                  0  Adr= 34,  DI
+  KomandeList
+      Komanda               <00>    NEMA_IZLAZA
+  IzlaziList
+  IniOut                UKLJUCI
+  CmdTimOut             0
+  UTS                   RTU-1
+  Ime                   IO-IS7
+  Opis                  Izolovani odsek IS7
+[STOP]   <RTU-1 / Izolovani odsek IS7>
+
+[DIGITAL]   <RTU-1 / Izolovani odsek IS8>
+  Validnost             ON
+  Ocitan                ON
+  Timestamp             660745654
+  Aktivnost             ON
+  Statistika            OFF
+  Dogadjaji             ON
+  MerenaVel             ON
+  Prioritet             3
+  TipDigDev             Izolovani odsek
+  NoDin                 1
+  NoDout                0
+  CurrStanje            SLOBODAN
+  StanjaList
+      Stanje                <00>    SLOBODAN
+      Stanje                <01>    ZAUZET
+  UlaziList
+      Ulaz                  0  Adr= 35,  DI
+  KomandeList
+      Komanda               <00>    NEMA_IZLAZA
+  IzlaziList
+  IniOut                UKLJUCI
+  CmdTimOut             0
+  UTS                   RTU-1
+  Ime                   IO-IS8
+  Opis                  Izolovani odsek IS8
+[STOP]   <RTU-1 / Izolovani odsek IS8>
+
+[DIGITAL]   <RTU-1 / Izolovani odsek IK2>
+  Validnost             ON
+  Ocitan                ON
+  Timestamp             660745654
+  Aktivnost             ON
+  Statistika            OFF
+  Dogadjaji             ON
+  MerenaVel             ON
+  Prioritet             3
+  TipDigDev             Izolovani odsek
+  NoDin                 1
+  NoDout                0
+  CurrStanje            SLOBODAN
+  StanjaList
+      Stanje                <00>    SLOBODAN
+      Stanje                <01>    ZAUZET
+  UlaziList
+      Ulaz                  0  Adr= 36,  DI
+  KomandeList
+      Komanda               <00>    NEMA_IZLAZA
+  IzlaziList
+  IniOut                UKLJUCI
+  CmdTimOut             0
+  UTS                   RTU-1
+  Ime                   IO-IK2
+  Opis                  Izolovani odsek IK2
+[STOP]   <RTU-1 / Izolovani odsek IK2>
+
+[DIGITAL]   <RTU-1 / Izolovani odsek IK3>
+  Validnost             ON
+  Ocitan                ON
+  Timestamp             660745654
+  Aktivnost             ON
+  Statistika            OFF
+  Dogadjaji             ON
+  MerenaVel             ON
+  Prioritet             3
+  TipDigDev             Izolovani odsek
+  NoDin                 1
+  NoDout                0
+  CurrStanje            SLOBODAN
+  StanjaList
+      Stanje                <00>    SLOBODAN
+      Stanje                <01>    ZAUZET
+  UlaziList
+      Ulaz                  0  Adr= 37,  DI
+  KomandeList
+      Komanda               <00>    NEMA_IZLAZA
+  IzlaziList
+  IniOut                UKLJUCI
+  CmdTimOut             0
+  UTS                   RTU-1
+  Ime                   IO-IK3
+  Opis                  Izolovani odsek IK3
+[STOP]   <RTU-1 / Izolovani odsek IK3>
+
+[DIGITAL]   <RTU-1 / Izolovani odsek IK4a>
+  Validnost             ON
+  Ocitan                ON
+  Timestamp             660745654
+  Aktivnost             ON
+  Statistika            OFF
+  Dogadjaji             ON
+  MerenaVel             ON
+  Prioritet             3
+  TipDigDev             Izolovani odsek
+  NoDin                 1
+  NoDout                0
+  CurrStanje            SLOBODAN
+  StanjaList
+      Stanje                <00>    SLOBODAN
+      Stanje                <01>    ZAUZET
+  UlaziList
+      Ulaz                  0  Adr= 38,  DI
+  KomandeList
+      Komanda               <00>    NEMA_IZLAZA
+  IzlaziList
+  IniOut                UKLJUCI
+  CmdTimOut             0
+  UTS                   RTU-1
+  Ime                   IO-IK4a
+  Opis                  Izolovani odsek IK4a
+[STOP]   <RTU-1 / Izolovani odsek IK4a>
+
+[DIGITAL]   <RTU-1 / Izolovani odsek IK4b>
+  Validnost             ON
+  Ocitan                ON
+  Timestamp             660745654
+  Aktivnost             ON
+  Statistika            OFF
+  Dogadjaji             ON
+  MerenaVel             ON
+  Prioritet             3
+  TipDigDev             Izolovani odsek
+  NoDin                 1
+  NoDout                0
+  CurrStanje            SLOBODAN
+  StanjaList
+      Stanje                <00>    SLOBODAN
+      Stanje                <01>    ZAUZET
+  UlaziList
+      Ulaz                  0  Adr= 39,  DI
+  KomandeList
+      Komanda               <00>    NEMA_IZLAZA
+  IzlaziList
+  IniOut                UKLJUCI
+  CmdTimOut             0
+  UTS                   RTU-1
+  Ime                   IO-IK4b
+  Opis                  Izolovani odsek IK4b
+[STOP]   <RTU-1 / Izolovani odsek IK4b>
 
 
 [END]   <SN sistem - DEMO 2>
